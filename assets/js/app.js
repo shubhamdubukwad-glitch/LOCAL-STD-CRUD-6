@@ -42,9 +42,8 @@ const stdcontainer = document.getElementById('stdcontainer');
 
 //READ-STD//
 let stdjson = localStorage.getItem('stdArr')
-// cl(stdjson)
 
-let stdArr = JSON.parse(localStorage.getItem('stdArr'))|| []
+let stdArr = JSON.parse(localStorage.getItem('stdArr')) || []
 // cl(stdArr)
 
 
@@ -73,7 +72,6 @@ readstd(stdArr);
 //CREATE-STD//
 function oncreatestd(eve) {
     eve.preventDefault()
-    cl(eve)
     let CREATE_OBJ = {
         fname: fname.value,
         lname: lname.value,
@@ -86,6 +84,7 @@ function oncreatestd(eve) {
     stdForm.reset()
     localStorage.setItem('stdArr', JSON.stringify(stdArr))
     let tr = document.createElement('tr');
+    tr.id=CREATE_OBJ.id;
     tr.innerHTML = `              <td>${stdArr.length}</td>
                                 <td>${CREATE_OBJ.fname}</td>
                                 <td>${CREATE_OBJ.lname}</td>
@@ -162,7 +161,7 @@ function onupdatestd() {
     let getIndex = stdArr.findIndex(p => p.id === UPDATE_ID)
     stdArr[getIndex] = UPDATE_OBJ;
     localStorage.setItem('stdArr', JSON.stringify(stdArr))
-    
+
     let tr = document.getElementById(UPDATE_ID).children
     tr[1].innerText = UPDATE_OBJ.fname;
     tr[2].innerText = UPDATE_OBJ.lname;
