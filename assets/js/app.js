@@ -44,7 +44,7 @@ const stdcontainer = document.getElementById('stdcontainer');
 let stdjson = localStorage.getItem('stdArr')
 // cl(stdjson)
 
-let stdArr = JSON.parse(localStorage.getItem('stdArr'))
+let stdArr = JSON.parse(localStorage.getItem('stdArr'))|| []
 // cl(stdArr)
 
 
