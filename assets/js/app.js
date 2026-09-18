@@ -12,39 +12,39 @@ const stdcontainer = document.getElementById('stdcontainer');
 
 
 //std-array (DATABASE)
-// let stdArr = [
-//     {
-//         fname: "shubham",
-//         lname: 'dubukwad',
-//         rollNO: 25,
-//         JOB: "wed-developer",
-//         salary: 65000,
-//         id: "321"
-//     },
-//     {
-//         fname: "vinod",
-//         lname: 'patil',
-//         rollNO: 25,
-//         JOB: "backend-developer",
-//         salary: 235000,
-//         id: "3651"
-//     },
-//     {
-//         fname: "kishor",
-//         lname: 'landge',
-//         rollNO: 25,
-//         JOB: "fulstack-developer",
-//         salary: 45000,
-//         id: "431"
-//     }
-// ];
-// localStorage.setItem('stdArr',JSON.stringify(stdArr))
+let stdArr = [
+    {
+        fname: "shubham",
+        lname: 'dubukwad',
+        rollNO: 25,
+        JOB: "wed-developer",
+        salary: 65000,
+        id: "321"
+    },
+    {
+        fname: "vinod",
+        lname: 'patil',
+        rollNO: 25,
+        JOB: "backend-developer",
+        salary: 235000,
+        id: "3651"
+    },
+    {
+        fname: "kishor",
+        lname: 'landge',
+        rollNO: 25,
+        JOB: "fulstack-developer",
+        salary: 45000,
+        id: "431"
+    }
+];
+localStorage.setItem('stdArr',JSON.stringify(stdArr))
 
 //READ-STD//
 let stdjson = localStorage.getItem('stdArr')
 // cl(stdjson)
 
-let stdArr = JSON.parse(localStorage.getItem('stdArr'))
+// let stdArr = JSON.parse(localStorage.getItem('stdArr'))
 // cl(stdArr)
 
 
