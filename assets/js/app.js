@@ -49,7 +49,7 @@ let stdArr = JSON.parse(localStorage.getItem('stdArr'))
 
 
 function readstd(arr) {
-    let result = ``;
+    let result = '';
     arr.forEach((ele, i) => {
         result += `<tr id="${ele.id}">
                                 <td>${i + 1}</td>
