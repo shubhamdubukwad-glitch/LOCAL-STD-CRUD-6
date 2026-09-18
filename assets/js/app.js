@@ -1,6 +1,6 @@
 var cl = console.log;
 
-const stdForm = document.getElementById('stdForm')
+const stdForm = document.getElementById('stdForm');
 const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
 const rollNO = document.getElementById('rollNO');
@@ -42,10 +42,10 @@ const stdcontainer = document.getElementById('stdcontainer');
 
 //READ-STD//
 let stdjson = localStorage.getItem('stdArr')
-cl(stdjson)
+// cl(stdjson)
 
 let stdArr = JSON.parse(localStorage.getItem('stdArr'))
-cl(stdArr)
+// cl(stdArr)
 
 
 function readstd(arr) {
